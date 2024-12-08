@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -35,22 +35,6 @@
 		BBB111B22D05950600AF4F75 /* SimpleRtlBT.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRtlBT.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB111C62D05952700AF4F75 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BBB111B92D05950600AF4F75 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = BBB111B12D05950600AF4F75 /* SimpleRtlBT */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BBB111752D05931600AF4F75 /* SimpleRtlBT */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SimpleRtlBT; sourceTree = "<group>"; };
-		BBB111932D05946100AF4F75 /* SimpleRtlBT */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SimpleRtlBT; sourceTree = "<group>"; };
-		BBB111B32D05950600AF4F75 /* SimpleRtlBT */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BBB111B92D05950600AF4F75 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SimpleRtlBT; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BBB111AF2D05950600AF4F75 /* Frameworks */ = {
@@ -124,9 +108,6 @@
 			children = (
 				51E2E7E92674F95700BBD815 /* SDK */,
 				D4F91B001A2998CE0030D10D /* SimpleRtlBt */,
-				BBB111752D05931600AF4F75 /* SimpleRtlBT */,
-				BBB111932D05946100AF4F75 /* SimpleRtlBT */,
-				BBB111B32D05950600AF4F75 /* SimpleRtlBT */,
 				D4F91AFF1A2998CE0030D10D /* Products */,
 				CE8DA13125182BB2008C44E8 /* Frameworks */,
 			);
@@ -176,9 +157,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				BBB111B32D05950600AF4F75 /* SimpleRtlBT */,
-			);
 			name = SimpleRtlBT;
 			packageProductDependencies = (
 			);
@@ -197,6 +175,7 @@
 				TargetAttributes = {
 					BBB111B12D05950600AF4F75 = {
 						CreatedOnToolsVersion = 16.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
