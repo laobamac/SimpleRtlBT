@@ -1,0 +1,46 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "9e90fedf5a9068bcdf354ab12a2ff8a285b37da896d10f00fecc2bcc95d1b60d"
+    }
+  ],
+  "containerPath" : "/Users/laobamac/Desktop/SimpleRtlBT0/SimpleRtlBt.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/laobamac/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/laobamac/Library/Developer/Xcode/DerivedData/SimpleRtlBt-cdmeumljaoxenidjkhnnoeoghici/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/laobamac/Library/Developer/Xcode/DerivedData/SimpleRtlBt-cdmeumljaoxenidjkhnnoeoghici/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

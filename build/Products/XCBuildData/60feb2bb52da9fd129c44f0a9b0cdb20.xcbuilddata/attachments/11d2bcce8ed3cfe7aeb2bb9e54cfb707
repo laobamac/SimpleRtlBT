@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-master.dia",
+    "emit-module-dependencies" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-master-emit-module.dia",
+    "swift-dependencies" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-master.swiftdeps"
+  },
+  "/Users/laobamac/Desktop/SimpleRtlBT0/SimpleRtlBT/SimpleRtlBT.swift" : {
+    "const-values" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.swiftconstvalues",
+    "dependencies" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.d",
+    "diagnostics" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.dia",
+    "index-unit-output-path" : "/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.o",
+    "llvm-bc" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.bc",
+    "object" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.o",
+    "swift-dependencies" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5.swiftdeps",
+    "swiftmodule" : "/Users/laobamac/Desktop/SimpleRtlBT0/build/Products/SimpleRtlBt.build/Debug/SimpleRtlBT.build/Objects-normal/x86_64/SimpleRtlBT-dcdddc69b978493bada0f9d0ea5b50a5~partial.swiftmodule"
+  }
+}
