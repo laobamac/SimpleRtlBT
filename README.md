@@ -1,4 +1,5 @@
 # SimpleRtlBT
+English | [简体中文](https://github.com/laobamac/SimpleRtlBT/blob/main/README_CN.md)
 A bluetooth firmware injector on macOS for RTL88xx wireless cards.
 
 ## Intro
