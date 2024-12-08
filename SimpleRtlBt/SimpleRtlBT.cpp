@@ -114,6 +114,9 @@ static void patched_cs_validate_page(vnode_t vp, memory_object_t pager, memory_o
             // 如果需要BTAddr，则进行替换
             if (shouldPatchAddress)
                 searchAndPatchWithMask(data, PAGE_SIZE, path, BTIgnoreAddrCheckOriginal, BTIgnoreAddrCheckMask, BTIgnoreAddrCheckPatched, BTIgnoreAddrCheckMask);
+            // 添加TPV补丁
+            //searchAndPatch(data, PAGE_SIZE, path, BTTPVCheckPatched, BTTPVCheckOriginal;
+            // 当kUSBVendorString为Apple时执行，暂无计划，故注释
         }
     }
 }
