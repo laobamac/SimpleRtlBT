@@ -14,6 +14,8 @@ The firmware binary files are from the Linux Open Source Project.
 
 *Before use it,please make sure that you have correct USB ports info,if not,you need to custom USB ports.*
 
+*This kernel extension depends on Lilu.kext 1.6.8+,please update your Lilu first.*
+
 - Disable all other bluetooth kexts including any BrcmPatchRAM plugins!Or your system will go to panic.
 - Go to release page to get latest version.
 - Uncompress it,then add SimpleRtlBT.kext and SimpleRtlBTPatcher.kext into you OpenCore,SimpleRtlBT.kext should be loaded before SimpleRtlBTPatcher.kext!
