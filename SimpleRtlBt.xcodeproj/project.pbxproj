@@ -10,16 +10,18 @@
 		51E2E7F52674FA4F00BBD815 /* plugin_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E2E7F42674FA4F00BBD815 /* plugin_start.cpp */; };
 		51E67F062673CA2B00FB6051 /* SimpleRtlBT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E67F042673CA2B00FB6051 /* SimpleRtlBT.cpp */; };
 		BBB111CC2D059DBC00AF4F75 /* SimpleRtlBT.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB111CB2D059DB800AF4F75 /* SimpleRtlBT.h */; };
+		BBB111D02D05B2DC00AF4F75 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB111CF2D05B2D000AF4F75 /* libkmod.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		51E67F032673C95000FB6051 /* CopyFiles */ = {
+		51E67F032673C95000FB6051 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -53,6 +55,7 @@
 		51E67F072673CC4800FB6051 /* SRTLBT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SRTLBT.plist; sourceTree = "<group>"; };
 		BBB111CA2D059D2700AF4F75 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkmod.a; sourceTree = "<group>"; };
 		BBB111CB2D059DB800AF4F75 /* SimpleRtlBT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleRtlBT.h; sourceTree = "<group>"; };
+		BBB111CF2D05B2D000AF4F75 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB111D02D05B2DC00AF4F75 /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +121,7 @@
 		CE8DA13125182BB2008C44E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBB111CF2D05B2D000AF4F75 /* libkmod.a */,
 				BBB111CA2D059D2700AF4F75 /* libkmod.a */,
 			);
 			name = Frameworks;
@@ -180,7 +185,7 @@
 				51E67EF22673C7FB00FB6051 /* Sources */,
 				51E67EF32673C7FB00FB6051 /* Frameworks */,
 				51E67EF12673C7FB00FB6051 /* Headers */,
-				51E67F032673C95000FB6051 /* CopyFiles */,
+				51E67F032673C95000FB6051 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -332,7 +337,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-Wno-stdlibcxx-not-found";
 				SDKROOT = macosx;
-				SYMROOT = build/Products;
+				SYMROOT = /Users/laobamac/Desktop/KextBuidings/SimpleRtlBT;
 			};
 			name = Debug;
 		};
@@ -362,6 +367,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -372,9 +378,10 @@
 				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
 				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-Wno-stdlibcxx-not-found";
 				SDKROOT = macosx;
-				SYMROOT = build/Products;
+				SYMROOT = /Users/laobamac/Desktop/KextBuidings/SimpleRtlBT;
 			};
 			name = Release;
 		};
