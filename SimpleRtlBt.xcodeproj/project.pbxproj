@@ -3,14 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBB111C72D059AC400AF4F75 /* plugin_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E2E7F42674FA4F00BBD815 /* plugin_start.cpp */; };
-		BBB111C82D059AC800AF4F75 /* SimpleRtlBT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E67F042673CA2B00FB6051 /* SimpleRtlBT.cpp */; };
-		BBB111C92D059AE100AF4F75 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB111C62D05952700AF4F75 /* libkmod.a */; };
+		51E2E7F52674FA4F00BBD815 /* plugin_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E2E7F42674FA4F00BBD815 /* plugin_start.cpp */; };
+		51E67F062673CA2B00FB6051 /* SimpleRtlBT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E67F042673CA2B00FB6051 /* SimpleRtlBT.cpp */; };
+		BBB111CC2D059DBC00AF4F75 /* SimpleRtlBT.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB111CB2D059DB800AF4F75 /* SimpleRtlBT.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51E67F032673C95000FB6051 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		517C9A0D2674FB1700338A13 /* kern_devinfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_devinfo.hpp; sourceTree = "<group>"; };
@@ -36,18 +48,18 @@
 		517C9A212674FB1700338A13 /* kern_time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_time.hpp; sourceTree = "<group>"; };
 		517C9A222674FB1700338A13 /* kern_mach.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_mach.hpp; sourceTree = "<group>"; };
 		51E2E7F42674FA4F00BBD815 /* plugin_start.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plugin_start.cpp; sourceTree = "<group>"; };
+		51E67EF62673C7FB00FB6051 /* SimpleRtlBT.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRtlBT.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E67F042673CA2B00FB6051 /* SimpleRtlBT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleRtlBT.cpp; sourceTree = "<group>"; };
-		BBB1116F2D0590AF00AF4F75 /* SimpleRtlBT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleRtlBT.h; sourceTree = "<group>"; };
-		BBB111B22D05950600AF4F75 /* SimpleRtlBT.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRtlBT.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB111C62D05952700AF4F75 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
+		51E67F072673CC4800FB6051 /* SRTLBT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SRTLBT.plist; sourceTree = "<group>"; };
+		BBB111CA2D059D2700AF4F75 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkmod.a; sourceTree = "<group>"; };
+		BBB111CB2D059DB800AF4F75 /* SimpleRtlBT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleRtlBT.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BBB111AF2D05950600AF4F75 /* Frameworks */ = {
+		51E67EF32673C7FB00FB6051 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB111C92D059AE100AF4F75 /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +117,7 @@
 		CE8DA13125182BB2008C44E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BBB111C62D05952700AF4F75 /* libkmod.a */,
+				BBB111CA2D059D2700AF4F75 /* libkmod.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				51E2E7E92674F95700BBD815 /* SDK */,
-				D4F91B001A2998CE0030D10D /* SimpleRtlBt */,
+				D4F91B001A2998CE0030D10D /* SimpleRtlBT */,
 				D4F91AFF1A2998CE0030D10D /* Products */,
 				CE8DA13125182BB2008C44E8 /* Frameworks */,
 			);
@@ -124,51 +136,59 @@
 		D4F91AFF1A2998CE0030D10D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBB111B22D05950600AF4F75 /* SimpleRtlBT.kext */,
+				51E67EF62673C7FB00FB6051 /* SimpleRtlBT.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4F91B001A2998CE0030D10D /* SimpleRtlBt */ = {
+		D4F91B001A2998CE0030D10D /* SimpleRtlBT */ = {
 			isa = PBXGroup;
 			children = (
-				BBB1116F2D0590AF00AF4F75 /* SimpleRtlBT.h */,
+				BBB111CB2D059DB800AF4F75 /* SimpleRtlBT.h */,
 				51E67F042673CA2B00FB6051 /* SimpleRtlBT.cpp */,
+				D4F91B011A2998CE0030D10D /* Info */,
 			);
-			path = SimpleRtlBt;
+			path = SimpleRtlBT;
+			sourceTree = "<group>";
+		};
+		D4F91B011A2998CE0030D10D /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				51E67F072673CC4800FB6051 /* SRTLBT.plist */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BBB111AD2D05950600AF4F75 /* Headers */ = {
+		51E67EF12673C7FB00FB6051 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB111CC2D059DBC00AF4F75 /* SimpleRtlBT.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BBB111B12D05950600AF4F75 /* SimpleRtlBT */ = {
+		51E67EF52673C7FB00FB6051 /* SimpleRtlBT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBB111BA2D05950600AF4F75 /* Build configuration list for PBXNativeTarget "SimpleRtlBT" */;
+			buildConfigurationList = 51E67EFF2673C7FB00FB6051 /* Build configuration list for PBXNativeTarget "SimpleRtlBT" */;
 			buildPhases = (
-				BBB111AD2D05950600AF4F75 /* Headers */,
-				BBB111AE2D05950600AF4F75 /* Sources */,
-				BBB111AF2D05950600AF4F75 /* Frameworks */,
-				BBB111B02D05950600AF4F75 /* Resources */,
+				51E67EF22673C7FB00FB6051 /* Sources */,
+				51E67EF32673C7FB00FB6051 /* Frameworks */,
+				51E67EF12673C7FB00FB6051 /* Headers */,
+				51E67F032673C95000FB6051 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SimpleRtlBT;
-			packageProductDependencies = (
-			);
-			productName = SimpleRtlBT;
-			productReference = BBB111B22D05950600AF4F75 /* SimpleRtlBT.kext */;
+			productName = BlueToolFixup;
+			productReference = 51E67EF62673C7FB00FB6051 /* SimpleRtlBT.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
@@ -177,17 +197,14 @@
 		D4F91AF51A2998CE0030D10D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					BBB111B12D05950600AF4F75 = {
-						CreatedOnToolsVersion = 16.0;
-						ProvisioningStyle = Automatic;
+					51E67EF52673C7FB00FB6051 = {
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = D4F91AF81A2998CE0030D10D /* Build configuration list for PBXProject "SimpleRtlBt" */;
+			buildConfigurationList = D4F91AF81A2998CE0030D10D /* Build configuration list for PBXProject "SimpleRtlBT" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -200,133 +217,77 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBB111B12D05950600AF4F75 /* SimpleRtlBT */,
+				51E67EF52673C7FB00FB6051 /* SimpleRtlBT */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		BBB111B02D05950600AF4F75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		BBB111AE2D05950600AF4F75 /* Sources */ = {
+		51E67EF22673C7FB00FB6051 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB111C82D059AC800AF4F75 /* SimpleRtlBT.cpp in Sources */,
-				BBB111C72D059AC400AF4F75 /* plugin_start.cpp in Sources */,
+				51E2E7F52674FA4F00BBD815 /* plugin_start.cpp in Sources */,
+				51E67F062673CA2B00FB6051 /* SimpleRtlBT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BBB111B72D05950600AF4F75 /* Debug */ = {
+		51E67EFD2673C7FB00FB6051 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
+					"PRODUCT_NAME=$(PRODUCT_NAME)",
+					"MODULE_VERSION=$(MODULE_VERSION)",
+					"LILU_CUSTOM_IOKIT_INIT=1",
 					"$(inherited)",
 				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Lilu.kext/Contents/Resources";
-				INFOPLIST_FILE = SimpleRtlBT/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleRtlBT/SRTLBT.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
 					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
 				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.0.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = cn.laobamac.SimpleRtlBT;
-				MODULE_START = SimpleRtlBT_start;
-				MODULE_STOP = SimpleRtlBT_stop;
-				MODULE_VERSION = 1.0.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MODULE_START = "$(PRODUCT_NAME)_kern_start";
+				MODULE_STOP = "$(PRODUCT_NAME)_kern_stop";
+				MODULE_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.laobamac.SimpleRtlBT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
 		};
-		BBB111B82D05950600AF4F75 /* Release */ = {
+		51E67EFE2673C7FB00FB6051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Lilu.kext/Contents/Resources";
-				INFOPLIST_FILE = SimpleRtlBT/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+				CODE_SIGN_IDENTITY = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"LILU_CUSTOM_IOKIT_INIT=1",
+					"PRODUCT_NAME=$(PRODUCT_NAME)",
+					"MODULE_VERSION=$(MODULE_VERSION)",
 					"$(inherited)",
 				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Lilu.kext/Contents/Resources";
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleRtlBT/SRTLBT.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = cn.laobamac.SimpleRtlBT;
-				MODULE_START = SimpleRtlBT_start;
-				MODULE_STOP = SimpleRtlBT_stop;
-				MODULE_VERSION = 1.0.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				MODULE_START = "$(PRODUCT_NAME)_kern_start";
+				MODULE_STOP = "$(PRODUCT_NAME)_kern_stop";
+				MODULE_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.laobamac.SimpleRtlBT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -334,7 +295,8 @@
 		D4F91B071A2998CE0030D10D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++1y";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -349,14 +311,12 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CURRENT_PROJECT_VERSION = 2.6.9;
-				DEAD_CODE_STRIPPING = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -373,14 +333,14 @@
 				OTHER_CFLAGS = "-Wno-stdlibcxx-not-found";
 				SDKROOT = macosx;
 				SYMROOT = build/Products;
-				USER_HEADER_SEARCH_PATHS = "/Users/laobamac/Desktop/MacKernelSDK/**";
 			};
 			name = Debug;
 		};
 		D4F91B081A2998CE0030D10D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++1y";
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -395,14 +355,12 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CURRENT_PROJECT_VERSION = 2.6.9;
-				DEAD_CODE_STRIPPING = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -417,23 +375,22 @@
 				OTHER_CFLAGS = "-Wno-stdlibcxx-not-found";
 				SDKROOT = macosx;
 				SYMROOT = build/Products;
-				USER_HEADER_SEARCH_PATHS = "/Users/laobamac/Desktop/MacKernelSDK/**";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBB111BA2D05950600AF4F75 /* Build configuration list for PBXNativeTarget "SimpleRtlBT" */ = {
+		51E67EFF2673C7FB00FB6051 /* Build configuration list for PBXNativeTarget "SimpleRtlBT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBB111B72D05950600AF4F75 /* Debug */,
-				BBB111B82D05950600AF4F75 /* Release */,
+				51E67EFD2673C7FB00FB6051 /* Debug */,
+				51E67EFE2673C7FB00FB6051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F91AF81A2998CE0030D10D /* Build configuration list for PBXProject "SimpleRtlBt" */ = {
+		D4F91AF81A2998CE0030D10D /* Build configuration list for PBXProject "SimpleRtlBT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F91B071A2998CE0030D10D /* Debug */,

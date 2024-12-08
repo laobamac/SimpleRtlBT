@@ -7,57 +7,12 @@
 		<key>SimpleRtlBT.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C7783242526A08800DBB02E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>841AD87C1BB3C0350082B7B0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>842B20B71BB2F0D900D3C468</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>84CDEE051BB3CA2200238DD1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BBB111732D05931600AF4F75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CE8DA714235248C300BCE180</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D346F7B823475DF60073A60D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ED5817BB1B7A6AEF006C5522</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ED7470ED1D184C5D005F75F1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EDC9E2B21D185240007E69B6</key>
+		<key>51E67EF52673C7FB00FB6051</key>
 		<dict>
 			<key>primary</key>
 			<true/>

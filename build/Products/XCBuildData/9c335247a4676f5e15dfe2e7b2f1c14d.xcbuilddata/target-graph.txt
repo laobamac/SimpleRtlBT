@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'SimpleRtlBT' in project 'SimpleRtlBt' (no dependencies)
